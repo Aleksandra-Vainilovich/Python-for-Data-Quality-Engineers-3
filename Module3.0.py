@@ -24,7 +24,7 @@ whitespaces = findall_last_word[6]
 nbr = findall_last_word[7]
 
 # One more sentence with last words of each existing sentence
-new_sentence = f'{here} is a {mistake} in {text} {paragraph}. To my {view} {variable} should have more than {87} {whitespaces}.'
+new_sentence = f'\n\n\t{here} is a {mistake} in {text} {paragraph}. To my {view} {variable} should have more than {87} {whitespaces}.\n'
 
 # Adding new sentence to the end of this paragraph
 message = initial_message + new_sentence
