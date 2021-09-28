@@ -38,7 +38,7 @@ def misspelling(a, b):
 
 # Calculate number of whitespace characters in this text
 def filtered_whitesp():
-    return list(s for s in misspelling if s.isspace())
+    return len(list(s for s in misspelling if s.isspace()))
 
 
 # Text variable
@@ -60,7 +60,7 @@ misspelling = misspelling(" iz", " is")
 print(f'Corrected mistakes:\n{misspelling}')
 
 
-print(f'Number of whitespaces: {len(filtered_whitesp())}')
+print(f'Number of whitespaces: {filtered_whitesp()}')
 
 
 
