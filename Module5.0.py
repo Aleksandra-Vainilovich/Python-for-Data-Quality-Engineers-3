@@ -1,17 +1,26 @@
 import datetime
 import random
 
+class PrintMessage:
+    def __init__(self, message):
+        self.message = message
+
+    def print_message(self):
+        ptf = open("Info.txt", "a")
+        print(self.message, file=ptf)
+        ptf.close()
+
+
 class News:
-    def __init__(self, news_msg, location):  
+    def __init__(self, news_msg, location):
         self.news_msg = news_msg
         self.location = location
 
     def news_message(self):
         message = f'News -------------------------\n{self.news_msg}\n{self.location}, {datetime.datetime.now()}\n\n'
-        ptf = open("Info.txt", "a")
-        print(message, file=ptf)
-        ptf.close()
-
+        self.prt = PrintMessage(message)
+        prt = self.prt
+        prt.print_message()
 
 class Advertising:
     def __init__(self, adv_message, location, actual_until=None):
@@ -21,9 +30,9 @@ class Advertising:
 
     def advertising(self):
         message = f'News -------------------------\n{self.adv_message}\n{self.location}, {self.actual_until} , {(datetime.datetime.strptime(self.actual_until, "%m/%d/%y") - datetime.datetime.now()).days}\n\n'
-        ptf = open("Info.txt", "a")
-        print(message, file=ptf)
-        ptf.close()
+        self.prt = PrintMessage(message)
+        prt = self.prt
+        prt.print_message()
 
 
 class WhoIs:
@@ -33,9 +42,9 @@ class WhoIs:
     def ask_question(self):
         rand_num_list = [random.randrange(1, 100) for i in range(1)]
         question = f'Who killed Kennedy?\n{self.answer}\nprobability: {rand_num_list[0]} %\n\n'
-        ptf = open("Info.txt", "a")
-        print(question, file=ptf)
-        ptf.close()
+        self.prt = PrintMessage(question)
+        prt = self.prt
+        prt.print_message()
 
 
 class Choice:
