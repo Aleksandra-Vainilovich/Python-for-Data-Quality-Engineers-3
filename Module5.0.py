@@ -56,12 +56,12 @@ class Choice:
             self.news = News(input('Please enter news text\n'), input('Please enter location\n'))
             news_mess = self.news
             news_mess.news_message()
-        if self.flag == '2':
+        elif self.flag == '2':
             self.advng = Advertising(input('Please enter advertisment text\n'), input('Please enter location\n'),
                                      input('Please enter due date in the format mm/dd/yy\n'))
             adv_message = self.advng
             adv_message.advertising()
-        if self.flag == '3':
+        elif self.flag == '3':
             self.question = WhoIs(input('Please enter your assumption\n'))
             question_mess = self.question
             question_mess.ask_question()
