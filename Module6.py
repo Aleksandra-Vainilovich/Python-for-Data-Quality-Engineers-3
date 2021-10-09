@@ -129,15 +129,4 @@ make_your_choice = Choice(input('Please enter your choice:\n1 for News message\n
 make_your_choice.choose_message_type()
 
 
-"""MODULE 6"""
-
-
-
-
-
-#add_mess = AddInfo('C:/Users/Aleksandra_Vainilovi/PycharmProjects/pythonProject/Module6.0_paste.txt', 'C:/Users/Aleksandra_Vainilovi/PycharmProjects/pythonProject/Module6.0.txt')
-#add_mess.add_message()
-#add_mess.normalize()
-
-
 
