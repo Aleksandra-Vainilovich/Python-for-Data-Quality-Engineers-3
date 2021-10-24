@@ -1,0 +1,20 @@
+<news_feed>
+    <type name = "News -------------------------">  # tag's attribute
+        <body>And STILL Volcano eruption</body>     # element
+        <location>Palma</location>
+    </type>
+    <type name = "Private Ad ------------------">
+        <body>PUppies for sale</body>               # closing Tag
+        <location/>
+        <date>12/11/21</date>
+    </type>
+    <type name = "How do you think? ----------">
+        <body>aliens</body>
+        <location/>
+        <date/>
+    </type>
+</news_feed>
+
+
+
+
